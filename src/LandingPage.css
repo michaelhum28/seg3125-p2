@@ -1,0 +1,72 @@
+/* LandingPage.css */
+
+.landing-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.experts-section {
+  padding: 50px 20px;
+  background: #e9e9e9;
+  text-align: center;
+}
+
+.experts-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.expert-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.expert-image {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.expert-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.expert-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  background: #d9d9d9;
+  text-align: center;
+}
+
+button.cta-button {
+  padding: 10px 20px;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button.cta-button:hover {
+  background-color: #555;
+}
