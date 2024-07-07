@@ -26,9 +26,10 @@ const LandingPage = ({ scrollToContact }) => {
         </div>
         <h1>Your Fitness Journey Starts Here</h1>
         <p>
-          Achieve your health and fitness goals with personalized plans, expert
-          advice, and a supportive community at FitLife.
+          Achieve your health and fitness goals with personalized plans, <br />
+          expert advice, and a supportive community at FitLife.
         </p>
+        
         <Link to="/services">
           <button className="cta-button">Get Started</button>
         </Link>
