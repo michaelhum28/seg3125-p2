@@ -21,18 +21,17 @@ body {
 .review-item {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
-  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
   margin-bottom: 10px;
-}
-
-.review-item img {
-  border-radius: 50%;
-  margin-right: 20px;
 }
 
 .review-details {
   flex-grow: 1;
+}
+
+.review-text {
+  max-width: 50%;
 }
 
 .review-form-container {
@@ -47,13 +46,17 @@ body {
   flex-direction: column;
 }
 
-.review-form-container label {
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
   margin-top: 10px;
 }
 
-.review-form-container input, .review-form-container textarea {
+.form-group input, .form-group select, .form-group textarea {
   margin-top: 5px;
-  padding: 8px;
+  padding: 10px;
   width: 100%;
 }
 

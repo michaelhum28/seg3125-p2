@@ -2,6 +2,14 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
+// Correctly import images
+import coach1 from './images/coach1.PNG';
+import coach2 from './images/coach2.PNG';
+import coach3 from './images/coach3.PNG';
+// Import new images for the hero section
+import heroImage1 from './images/gym1.jpg';
+import heroImage2 from './images/gym2.jpg';
+
 const LandingPage = ({ scrollToContact }) => {
   useEffect(() => {
     if (scrollToContact) {
@@ -12,6 +20,10 @@ const LandingPage = ({ scrollToContact }) => {
   return (
     <div className="landing-page">
       <section className="hero-section">
+        <div className="hero-images">
+          <img src={heroImage1} alt="Hero Left" className="hero-image" />
+          <img src={heroImage2} alt="Hero Right" className="hero-image" />
+        </div>
         <h1>Your Fitness Journey Starts Here</h1>
         <p>
           Achieve your health and fitness goals with personalized plans, expert
@@ -26,19 +38,37 @@ const LandingPage = ({ scrollToContact }) => {
         <h2>Our Experts</h2>
         <div className="experts-container">
           <div className="expert-card">
-            <div className="expert-image"></div>
-            <div className="expert-name">Name</div>
-            <div className="expert-description">Description...</div>
+            <div
+              className="expert-image"
+              style={{ backgroundImage: `url(${coach1})` }}
+            ></div>
+            <div className="expert-name">John Doe</div>
+            <div className="expert-description">
+              Certified personal trainer with over 10 years of experience in strength training and nutrition.
+            </div>
+            <div className="expert-specialization">Specialization: Strength Training</div>
           </div>
           <div className="expert-card">
-            <div className="expert-image"></div>
-            <div className="expert-name">Name</div>
-            <div className="expert-description">Description...</div>
+            <div
+              className="expert-image"
+              style={{ backgroundImage: `url(${coach2})` }}
+            ></div>
+            <div className="expert-name">Michael Johnson</div>
+            <div className="expert-description">
+              Cardio and endurance coach with a focus on marathon training and cardiovascular health.
+            </div>
+            <div className="expert-specialization">Specialization: Cardio</div>
           </div>
           <div className="expert-card">
-            <div className="expert-image"></div>
-            <div className="expert-name">Name</div>
-            <div className="expert-description">Description...</div>
+            <div
+              className="expert-image"
+              style={{ backgroundImage: `url(${coach3})` }}
+            ></div>
+            <div className="expert-name">Jane Smith</div>
+            <div className="expert-description">
+              Yoga and pilates instructor, specializing in flexibility and mindfulness techniques.
+            </div>
+            <div className="expert-specialization">Specialization: Yoga</div>
           </div>
         </div>
       </section>

@@ -1,7 +1,9 @@
+// src/Planworkout.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Planworkout.css';
 
-const Plan = () => {
+const Planworkout = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -10,6 +12,8 @@ const Plan = () => {
         duration: '',
         lifeCircumstances: '',
     });
+
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -32,6 +36,8 @@ const Plan = () => {
             duration: '',
             lifeCircumstances: '',
         });
+        // Navigate to the confirmation page
+        navigate('/confirm');
     };
 
     return (
@@ -115,4 +121,4 @@ const Plan = () => {
     );
 };
 
-export default Plan;
+export default Planworkout;
