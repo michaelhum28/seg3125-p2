@@ -8,9 +8,6 @@ import './App.css';
 import Planworkout from './Planworkout';
 import Plannutrition from './Plannutrition';
 
-//things to add for personas: note workouts, nutrition meals
-//also change the plans page because it sucks
-
 const About = () => <h1>About Page</h1>;
 
 function App() {
@@ -24,7 +21,7 @@ function App() {
   }, [scrollToContact]);
 
   return (
-    <Router>
+    <Router basename="/seg3125-p2">
       <Navbar setScrollToContact={setScrollToContact} />
       <Routes>
         <Route path="/" element={<LandingPage scrollToContact={scrollToContact} />} />
