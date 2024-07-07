@@ -5,6 +5,11 @@ import LandingPage from './LandingPage';
 import Services from './Services';
 import Reviews from './Reviews';
 import './App.css';
+import Planworkout from './Planworkout';
+import Plannutrition from './Plannutrition';
+
+//things to add for personas: note workouts, nutrition meals
+//also change the plans page because it sucks
 
 const About = () => <h1>About Page</h1>;
 
@@ -26,6 +31,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/planworkout" element={<Planworkout />} />
+        <Route path="/plannutrition" element={<Plannutrition />} />
       </Routes>
     </Router>
   );

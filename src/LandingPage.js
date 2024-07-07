@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage = ({ scrollToContact }) => {
@@ -16,7 +17,9 @@ const LandingPage = ({ scrollToContact }) => {
           Achieve your health and fitness goals with personalized plans, expert
           advice, and a supportive community at FitLife.
         </p>
-        <button className="cta-button">Get Started</button>
+        <Link to="/services">
+          <button className="cta-button">Get Started</button>
+        </Link>
       </section>
 
       <section className="experts-section">
